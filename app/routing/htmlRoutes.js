@@ -1,7 +1,7 @@
 var path = require("path");
 
 
-module.exports = fileRoutes();
+
 
 var fileRoutes = function(app) {
 
@@ -20,3 +20,6 @@ var fileRoutes = function(app) {
         res.sendFile(path.join(__dirname, "/../public/home.html"));
     });
 };
+
+
+module.exports = fileRoutes;
